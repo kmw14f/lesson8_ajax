@@ -1,8 +1,8 @@
 <html>
 <!- - 
 Program Name:   Seminole Movie Connection
-Author: 
-Date: 
+Author: Katherine Weachter 
+Date: December 2nd, 2016
 Filename:   Movie.html
 - ->
     
@@ -53,7 +53,45 @@ Filename:   Movie.html
             <h3 class="list-group-item-heading">Release Date:</h3>
             <p class="list-group-item-text lead text-primary" id="Released">  </p>
         </a> 
-
+        
+         <a href="#" class="list-group-item">
+            <h3 class="list-group-item-heading">Year:</h3>
+            <p class="list-group-item-text lead text-primary" id="Year">  </p>
+        </a> 
+        
+         <a href="#" class="list-group-item">
+            <h3 class="list-group-item-heading">Genre:</h3>
+            <p class="list-group-item-text lead text-primary" id="Genre">  </p>
+        </a> 
+        
+         <a href="#" class="list-group-item">
+            <h3 class="list-group-item-heading">Writer:</h3>
+            <p class="list-group-item-text lead text-primary" id="Writer">  </p>
+        </a> 
+        
+         <a href="#" class="list-group-item">
+            <h3 class="list-group-item-heading">Poster:</h3>
+            <p class="list-group-item-text lead text-primary" id="Poster">  </p>
+        </a> 
+        
+         <a href="#" class="list-group-item">
+            <h3 class="list-group-item-heading">Runtime:</h3>
+            <p class="list-group-item-text lead text-primary" id="Runtime">  </p>
+        </a> 
+         <a href="#" class="list-group-item">
+            <h3 class="list-group-item-heading">Response:</h3>
+            <p class="list-group-item-text lead text-primary" id="Response">  </p>
+        </a> 
+         <a href="#" class="list-group-item">
+            <h3 class="list-group-item-heading">Awards:</h3>
+            <p class="list-group-item-text lead text-primary" id="Awards">  </p>
+        </a> 
+        
+         <a href="#" class="list-group-item">
+            <h3 class="list-group-item-heading">Language:</h3>
+            <p class="list-group-item-text lead text-primary" id="Language">  </p>
+        </a> 
+        
     </div>
 </div> 
     <script>
@@ -71,6 +109,14 @@ Filename:   Movie.html
                      $('#Actors').html(json.Actors);
                      $('#Plot').html(json.Plot);
                      $('#Released').html(json.Released);
+                     $('#Year').html(json.Year);
+                     $('#Genre').html(json.Genre);
+                     $('#Writer').html(json.Writer);
+                     $('#Poster').html(json.Poster);
+                     $('#Runtime').html(json.Runtime);
+                     $('#Response').html(json.Response);
+                     $('#Awards').html(json.Awards);
+                     $('#Language').html(json.Language);
                 })
                 .fail(function() {
                       alert("Posting failed.");              
